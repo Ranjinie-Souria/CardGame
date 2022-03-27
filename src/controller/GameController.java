@@ -6,16 +6,9 @@ import java.util.List;
 import model.Deck;
 import model.Player;
 import model.PlayingCard;
+import view.View;
 
-class View{
-	public void doSomething() {
-		
-	}
-	
-	public void setController(GameController gc) {
-		
-	}
-}
+
 public class GameController {
 	enum GameState{
 		AddingPlayers, CardsDealt, WinnerRevealed;
