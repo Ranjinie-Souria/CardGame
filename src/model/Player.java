@@ -21,6 +21,10 @@ public class Player {
 	public PlayingCard removeCard() {
 		return hand.removeCard();
 	}
+
+	public String getName() {
+		return this.name;
+	}
 	
 	
 
