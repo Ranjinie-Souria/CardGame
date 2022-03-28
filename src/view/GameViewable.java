@@ -3,21 +3,13 @@ package view;
 import controller.GameController;
 
 public interface GameViewable {
-
-    void setController(GameController controller);
-
-    void promptForPlayerName();
-
-    void showPlayerName(int playerIndex, String name);
-
-    void showFaceDownCardForPlayer(int playerIndex, String name);
-
-    void promptForFlip();
-
-    void showCardForPlayer(int playerIndex, String name, String rank, String suit);
-
-    void showWinner (String winnerName);
-
-    void promptForNewGame();
-
+	
+	public void setController(GameController gc);
+	public void promptForPlayerName();
+	public void promptForFlip();
+	public void promptForNewGame();
+	public void showWinner(String playerName);
+	public void showPlayerName(int playerIndex, String playerName);
+	public void showFaceDownCardForPlayer(int i, String playerName);
+	public void showCardForPlayer(int i, String playerName, String rank, String suit);
 }
