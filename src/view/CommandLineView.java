@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import controller.GameController;
 
-public class View {
+public class CommandLineView implements GameViewable{
 	
 	GameController controller;
 	Scanner keyboard = new Scanner(System.in);
@@ -30,9 +30,9 @@ public class View {
 	}
 
 	public void promptForNewGame() {
-		System.out.println("Press enter to deal again");
+		System.out.println("Press enter to deal again or +q to exit");
 		keyboard.nextLine();
-		controller.startGame();
+		controller.nextAction(keyboard.nextLine());
 	}
 
 	public void showWinner(String playerName) {
