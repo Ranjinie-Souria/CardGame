@@ -1,6 +1,6 @@
 package model;
 
-public class Player {
+public class Player implements IPlayer{
 	private String name;
 	private Hand hand;
 	
@@ -25,7 +25,4 @@ public class Player {
 	public String getName() {
 		return this.name;
 	}
-	
-	
-
 }

@@ -2,16 +2,16 @@ package games;
 
 import java.util.List;
 
-import model.Player;
+import model.IPlayer;
 import model.PlayingCard;
 
 public class HighCardGameEvaluator implements GameEvaluator {
-	public Player evaluateWinner(List<Player> players) {
-		Player bestPlayer = null;
+	public IPlayer evaluateWinner(List<IPlayer> players) {
+		IPlayer bestPlayer = null;
 		int bestRank = -1;
 		int bestSuit = -1;
 
-		for (Player player : players) {
+		for (IPlayer player : players) {
 			boolean newBestPlayer = false;
 
 			if (bestPlayer == null) {
